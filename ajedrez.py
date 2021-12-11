@@ -321,3 +321,7 @@ class Figure(object):
 		self.color = color
 		self.posicion = pos1
 		self.posibles_mov = posibles_mov
+
+    def update_position():
+        self.posicion= posicion
+    
