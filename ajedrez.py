@@ -313,3 +313,11 @@ g1.grid(row=8, column=7)
 h1 = Button(tk, text=WR, font='Times 20 bold', bg='white', height=2, width=5, command=lambda: [btnClick(h1), btnID('h1')])
 h1.grid(row=8, column=8)
 
+class Figure(object):
+	
+	def __init__(self, name, object_name, color, pos1, posibles_mov):
+		self.object_name = object_name
+		self.name = name
+		self.color = color
+		self.posicion = pos1
+		self.posibles_mov = posibles_mov
