@@ -35,12 +35,11 @@ Hemos resuelto el juego del ajedrez. El diagrama de flujo que tenemos en nuestro
 El código utilizado:
 
 '''
+
 import chess 
-  
 board=('♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖') 
 #tupla pues este tablero es siempre el mismo
 print(board)
-
 def partida(tablero):
     board = []
 
@@ -77,6 +76,6 @@ def partida(tablero):
             file.close()
     return 
 
-
 partida("1 ")
+
 '''
