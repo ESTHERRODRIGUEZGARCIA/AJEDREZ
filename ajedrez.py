@@ -49,7 +49,12 @@ partida("partida1.txt ")
 def board(tablero, n):
     
     file = open(tablero, 'r')#método readline, lo abre  solo para ser leído; no puede ser editado.
+    tableros = file.read().split('\n')
+    for i in tableros[n*9:n*9+8]:
+            print(i)
+    return
 
+board('partida1.txt', 2)
 
 
 
