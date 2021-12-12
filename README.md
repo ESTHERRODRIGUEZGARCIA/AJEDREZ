@@ -1,5 +1,8 @@
 # AJEDREZ
 
+Mi dirección de github para este repositorio es la siguiente:
+
+
 Vamos a realizar el juego de la ajedrez. La primera tarea consiste en escribir un programa que guarde en un fichero la secuencia de tableros de una partida de ajedrez. Partiremos del tablero inicial donde las filas del tablero están separadas por cambios de línea y las columnas por tabuladores.
 
 ♜	 ♞	 ♝	 ♛  	♚	   ♝	   ♞	   ♜
@@ -22,10 +25,10 @@ Además, una vez generado el fichero con los tableros sucesivos de una partida d
 ♜	♞	♝	♛	♚	♝	♞	♜
 
 ♟	♟	♟		♟	♟	♟	♟
-							
-			  ♟				
-						     ♙	
-							
+			 ♟				
+						
+						
+							♙
 ♙	♙	♙	♙	♙	♙		♙
 
 ♖	♘	♗	♕	♔	♗	♘	♖
