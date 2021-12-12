@@ -29,6 +29,7 @@ Además, una vez generado el fichero con los tableros sucesivos de una partida d
 
 Hemos resuelto el juego del ajedrez. El diagrama de flujo que tenemos en nuestro código es el siguiente:
 
-![image](https://user-images.githubusercontent.com/91721860/145719173-ea78aa42-a59c-49c4-b3d1-2b849571d134.png)
+![image](https://user-images.githubusercontent.com/91721860/145719244-a2e923d1-4dab-4383-ae08-2a98e6841347.png)
+
 
 El código utilizado:
