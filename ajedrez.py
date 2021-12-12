@@ -9,15 +9,15 @@ print(board)
 def partida(tablero):
     board = []
 
-    tablero = board #es una lista puesto que hay que modificarla
+    tablero = board #es una lista puesto que hay que modificarla 
     board_list = board.split(" ") #solucionar excepcion 'list' object has no attribute 'split'
     for i in board_list.split('\n'): #split para separar los elementos del tablero, vertical y horizontalmente
         tablero.append(i.split('\t'))
         print(board_list)
-    file = open(tablero, "w")
+    file = open(tablero, "w") #Modo de Escritura (Write)
 
     for i in board:
-        file.write('\t'.join(i) + '\n')
+        file.write('\t'.join(i) + '\n') #si convertimos una cadena en lista podremos modificarla. Y luego volver a convertirla en cadena.
         #junto los elementos
     file.close()
     #comienza la partida
@@ -34,7 +34,7 @@ def partida(tablero):
             columna2 = int(input("Introduce la columna donde quieres mover la ficha: "))
             tablero = tablero[fila1 + columna1 + fila2 + columna2]
             turno += 1
-            file = open(tablero, "a")
+            file = open(tablero, "a") #Modo de Solo escritura al final (“a”)
             file.write("Has realizado ", str(turno), "movimientos \n")
             for i in board:
                 file.write('\t'.join(i) + '\n')
