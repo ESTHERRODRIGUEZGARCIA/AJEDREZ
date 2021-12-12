@@ -3,7 +3,7 @@
 import chess 
   
 board=('♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖') 
-  
+#tupla pues este tablero es siempre el mismo
 print(board)
 
 def partida(tablero):
@@ -24,7 +24,7 @@ def partida(tablero):
     turno = 0 #no se ha jugado todavía
     while True:
         continuar = str(input("¿Quiere seguir jugando? \n Posibles respuestas: Si/No"))
-        if continuar == "No":
+        if continuar != "Si":
             break
         elif continuar == "Si": 
             #la pieza está en una posición, el usuario debe moverla
