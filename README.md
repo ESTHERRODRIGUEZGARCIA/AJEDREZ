@@ -4,7 +4,7 @@ Mi dirección de github para este repositorio es la siguiente:
 
 https://github.com/ESTHERRODRIGUEZGARCIA/AJEDREZ.git
 
-Vamos a realizar el juego de la ajedrez. La primera tarea consiste en escribir un programa que guarde en un fichero la secuencia de tableros de una partida de ajedrez. Partiremos del tablero inicial donde las filas del tablero están separadas por cambios de línea y las columnas por tabuladores.
+Vamos a realizar el juego del ajedrez. La primera tarea consiste en escribir un programa que guarde en un fichero la secuencia de tableros de una partida de ajedrez. Partiremos del tablero inicial donde las filas del tablero están separadas por cambios de línea y las columnas por tabuladores.
 
 ♜	 ♞	 ♝	 ♛  	♚	   ♝	   ♞	   ♜
 
@@ -27,4 +27,4 @@ Además, una vez generado el fichero con los tableros sucesivos de una partida d
 
 
 
-Hemos resuelto el juego de la ajedrez. El diagrama de flujo que tenemos en nuestro código es el siguiente:
+Hemos resuelto el juego del ajedrez. El diagrama de flujo que tenemos en nuestro código es el siguiente:
