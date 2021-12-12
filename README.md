@@ -36,21 +36,16 @@ El código utilizado:
 
 ```` 
 import chess 
-
+  
 board=('♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖') 
-
 #tupla pues este tablero es siempre el mismo
-
 print(board)
 
 def partida(tablero):
-
     board = []
-    
+
     tablero = board #es una lista puesto que hay que modificarla 
-    
     board_list = board.split(" ") #solucionar excepcion 'list' object has no attribute 'split'
-    
     for i in board_list.split('\n'): #split para separar los elementos del tablero, vertical y horizontalmente
         tablero.append(i.split('\t'))
         print(board_list)
@@ -81,6 +76,20 @@ def partida(tablero):
                 #junto los elementos
             file.close()
     return 
-partida("1 ")
+
+
+partida("partida1.txt ")
+
+#tarea2
+def board(tablero, n):
+    
+    file = open(tablero, 'r')#método readline, lo abre  solo para ser leído; no puede ser editado.
+    tableros = file.read().split('\n')
+    for i in tableros[n*9:n*9+8]:
+            print(i)
+    return
+
+board('partida1.txt', 2)
+
 
 ````
