@@ -43,6 +43,13 @@ def partida(tablero):
     return 
 
 
-partida("1 ")
+partida("partida1.txt ")
+
+#tarea2
+def board(tablero, n):
+    
+    file = open(tablero, 'r')#método readline, lo abre  solo para ser leído; no puede ser editado.
+
+
 
 
