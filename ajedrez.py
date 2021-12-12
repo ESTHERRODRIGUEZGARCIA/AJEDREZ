@@ -19,9 +19,12 @@ def partida():
         continuar = str(input("¿Quiere seguir jugando? \n Posible respuesta: Si/no"))
         if continuar == "No":
             break
-        elif continuar == "Si":
-            fila1 = int(input("Introduce la fila en la que está la pieza que quieres mover: "))
-            columna1 = int(input("Introduce la columna en la que está la pieza que quieres mover: "))
+        elif continuar == "Si": 
+            #la pieza está en una posición, el usuario debe moverla
+            fila1 = int(input("Introduce la fila en la que está la ficha que quieres mover: "))
+            columna1 = int(input("Introduce la columna en la que está la ficha que quieres mover: "))
+            fila2 = int(input("Introduce la fila hacia donde quieres mover la ficha: "))
+            columna2 = int(input("Introduce la columna donde quieres mover la ficha: "))
 
 
 partida('partida1.txt')    
