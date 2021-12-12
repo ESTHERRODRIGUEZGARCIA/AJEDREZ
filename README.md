@@ -23,16 +23,8 @@ El programa debe guardar el tablero inicial en un fichero con el nombre que elij
 
 Además, una vez generado el fichero con los tableros sucesivos de una partida de ajedrez, el programa preguntará por un movimiento y mostrará por pantalla el tablero correspondiente ese movimiento. Por ejemplo, utilizando el fichero partida-ajedrez.txt, si el usuario introduce el movimiento 2, debería mostrar por pantalla el siguiente tablero:
 
-♜	♞	♝	♛	♚	♝	♞	♜
+![image](https://user-images.githubusercontent.com/91721860/145718160-454dccbc-6904-4623-96d2-a644590a28f8.png)
 
-♟	♟	♟		♟	♟	♟	♟
-							
-			♟				
-						♙	
-							
-♙	♙	♙	♙	♙	♙		♙
-
-♖	♘	♗	♕	♔	♗	♘	♖
 
 
 Hemos resuelto el juego de la ajedrez. El diagrama de flujo que tenemos en nuestro código es el siguiente:
