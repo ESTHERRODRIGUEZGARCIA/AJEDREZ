@@ -25,6 +25,7 @@ def partida():
             columna1 = int(input("Introduce la columna en la que está la ficha que quieres mover: "))
             fila2 = int(input("Introduce la fila hacia donde quieres mover la ficha: "))
             columna2 = int(input("Introduce la columna donde quieres mover la ficha: "))
+            tablero = tablero[fila1 + columna1 + fila2 + columna2]
 
 
 partida('partida1.txt')    
