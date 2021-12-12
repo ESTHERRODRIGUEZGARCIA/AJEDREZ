@@ -1,34 +1,20 @@
 #AJEDREZ
 #tablero de 8 * 8
+import chess 
+  
+board=('♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖') 
+  
+print(board)
 def partida(tablero):
-    tablero1 = { 
-    U+2656: ♜, 
-    U+2658: ♞, 
-    chr(U+2657): ♝, 
-    chr(U+2655): ♛, 
-    chr(U+2654): ♚, 
-    chr(U+2657): ♝,
-    chr(U+2658): ♞,
-    chr(U+2656): ♜,
-    chr(U+2659): ♟,
-    chr(U+2659): ♟,
-    chr(U+2659): ♟,
-    chr(U+2659): ♟,
-    chr(U+2659): ♟,
-    chr(U+2659): ♟,
-    chr(U+2659): ♟,
-    chr(U+2659): ♟, 
-    }
-print("Ficha: {}".format(" ".join(tablero1.keys())))
-print("Valor: {}".format(list(tablero1.values())))
-    '♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖'
+    board = []
+
     tablero =[] #es una lista puesto que hay que modificarla
-    for i in tablero1.split('\n'): #split para separar los elementos del tablero, vertical y horizontalmente
+    for i in board.split('\n'): #split para separar los elementos del tablero, vertical y horizontalmente
         tablero.append(i.split('\t'))
     
     file = open(tablero)
 
-    for i in tablero1:
+    for i in board:
         file.write('\t'.join(i) + '\n')
         #junto los elementos
     file.close()
@@ -55,6 +41,6 @@ print("Valor: {}".format(list(tablero1.values())))
     return 
 
 
-partida(tablero)    
+partida(" ")    
 
 
