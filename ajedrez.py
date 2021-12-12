@@ -6,11 +6,11 @@ def partida():
     for i in tablero1.split('\n'): #split para separar los elementos del tablero, vertical y horizontalmente
         tablero.append(i.split('\t'))
     
-    file = open(tablero)
-    print(file.tablero())
+    file = open(tablero1)
+    print(file.tablero1())
 
-    for i in tablero:
-        f.write('\t'.join(i) + '\n')
+    for i in tablero1:
+        file.write('\t'.join(i) + '\n')
         #junto los elementos
     file.close()
 partida('partida1.txt')    
