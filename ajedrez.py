@@ -1,13 +1,32 @@
 #AJEDREZ
 #tablero de 8 * 8
-def partida():
-    tablero1 = '♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖'
+def partida(tablero):
+    tablero1 = { 
+    U+2656: ♜, 
+    U+2658: ♞, 
+    chr(U+2657): ♝, 
+    chr(U+2655): ♛, 
+    chr(U+2654): ♚, 
+    chr(U+2657): ♝,
+    chr(U+2658): ♞,
+    chr(U+2656): ♜,
+    chr(U+2659): ♟,
+    chr(U+2659): ♟,
+    chr(U+2659): ♟,
+    chr(U+2659): ♟,
+    chr(U+2659): ♟,
+    chr(U+2659): ♟,
+    chr(U+2659): ♟,
+    chr(U+2659): ♟, 
+    }
+print("Ficha: {}".format(" ".join(tablero1.keys())))
+print("Valor: {}".format(list(tablero1.values())))
+    '♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖'
     tablero =[] #es una lista puesto que hay que modificarla
     for i in tablero1.split('\n'): #split para separar los elementos del tablero, vertical y horizontalmente
         tablero.append(i.split('\t'))
     
-    file = open(tablero1)
-    print(file.tablero1())
+    file = open(tablero)
 
     for i in tablero1:
         file.write('\t'.join(i) + '\n')
@@ -15,8 +34,8 @@ def partida():
     file.close()
     #comienza la partida
     turno = 0 #no se ha jugado todavía
-    while turno == 0:
-        continuar = str(input("¿Quiere seguir jugando? \n Posible respuesta: Si/no"))
+    while True:
+        continuar = str(input("¿Quiere seguir jugando? \n Posibles respuestas: Si/No"))
         if continuar == "No":
             break
         elif continuar == "Si": 
@@ -36,6 +55,6 @@ def partida():
     return 
 
 
-partida('partida1.txt')    
+partida(tablero)    
 
 
