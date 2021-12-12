@@ -34,8 +34,7 @@ Hemos resuelto el juego del ajedrez. El diagrama de flujo que tenemos en nuestro
 
 El código utilizado:
 
-'''
-
+```` 
 import chess 
 
 board=('♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖') 
@@ -43,11 +42,15 @@ board=('♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t�
 #tupla pues este tablero es siempre el mismo
 
 print(board)
-def partida(tablero):
-    board = []
 
+def partida(tablero):
+
+    board = []
+    
     tablero = board #es una lista puesto que hay que modificarla 
+    
     board_list = board.split(" ") #solucionar excepcion 'list' object has no attribute 'split'
+    
     for i in board_list.split('\n'): #split para separar los elementos del tablero, vertical y horizontalmente
         tablero.append(i.split('\t'))
         print(board_list)
@@ -80,4 +83,4 @@ def partida(tablero):
     return 
 partida("1 ")
 
-'''
+````
