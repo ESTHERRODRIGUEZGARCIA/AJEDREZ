@@ -15,7 +15,15 @@ def partida():
     file.close()
     #comienza la partida
     turno = 0 #no se ha jugado todavía
-    
+    while turno == 0:
+        continuar = str(input("¿Quiere seguir jugando? \n Posible respuesta: Si/no"))
+        if continuar == "No":
+            break
+        elif continuar == "Si":
+            fila1 = int(input("Introduce la fila en la que está la pieza que quieres mover: "))
+            columna1 = int(input("Introduce la columna en la que está la pieza que quieres mover: "))
+
+
 partida('partida1.txt')    
 
 
