@@ -8,7 +8,7 @@ print(board)
 def partida(tablero):
     board = []
 
-    tablero =[] #es una lista puesto que hay que modificarla
+    tablero = board #es una lista puesto que hay que modificarla
     for i in board.split('\n'): #split para separar los elementos del tablero, vertical y horizontalmente
         tablero.append(i.split('\t'))
     
@@ -34,13 +34,13 @@ def partida(tablero):
             turno += 1
             file = open(tablero)
             file.write("Has realizado ", turno, "movimientos")
-            for i in tablero1:
+            for i in board:
                 file.write('\t'.join(i) + '\n')
                 #junto los elementos
             file.close()
     return 
 
 
-partida(" ")    
+partida(" ")
 
 
