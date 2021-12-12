@@ -13,6 +13,9 @@ def partida():
         file.write('\t'.join(i) + '\n')
         #junto los elementos
     file.close()
+    #comienza la partida
+    turno = 0 #no se ha jugado todavía
+    
 partida('partida1.txt')    
 
 
