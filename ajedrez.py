@@ -26,6 +26,14 @@ def partida():
             fila2 = int(input("Introduce la fila hacia donde quieres mover la ficha: "))
             columna2 = int(input("Introduce la columna donde quieres mover la ficha: "))
             tablero = tablero[fila1 + columna1 + fila2 + columna2]
+            turno += 1
+            file = open(tablero)
+            file.write("Has realizado ", turno, "movimientos")
+            for i in tablero1:
+                file.write('\t'.join(i) + '\n')
+                #junto los elementos
+            file.close()
+    return 
 
 
 partida('partida1.txt')    
